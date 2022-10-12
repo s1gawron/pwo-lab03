@@ -6,12 +6,12 @@ public class Zadanie1 {
 
     public static final int TO = 100;
 
-    public static final String FILE_NAME = "fibseq100.txt";
+    public static final String FILE_NAME = "lucasseq100.txt";
 
     public static void main(String[] args) {
-        System.out.println("Fibonacci wersja 2");
+        System.out.println("Lucas wersja 1");
 
-        boolean ok = SequenceTools.writeToFile(new FibonacciGenerator(), FROM, TO, FILE_NAME);
+        boolean ok = SequenceTools.writeToFile(new LucasGenerator(), FROM, TO, FILE_NAME);
 
         if (ok) {
             System.out.println("Wynik zapisany do pliku: " + FILE_NAME);
